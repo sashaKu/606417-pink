@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Александр Кузнецов](https://up.htmlacademy.ru/adaptive/15/user/606417).
-* Наставник: `Неизвестно`.
+* Наставник: `Наталья Налимова`.
 
 ---
 
