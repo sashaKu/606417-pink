@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Pink</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo page-header__logo" href="index.html">
+        <span class="visually-hidden">Pink</span>
+        <svg class="page-header__logo-svg" xmlns="http://www.w3.org/2000/svg" width="75" height="22" viewBox="0 0 75 22"></svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--active" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <section class="collection">
+        <h2 class="visually-hidden">Опубликованные фотографии</h2>
+        <ul class="collection__list">
+          <li class="collection__item">
+            <div class="collection__better">
+              <span class="collection__item--better">Панорама дня</span>
+              <a class="collection__full-picture" href="#">
+                <img src="http://placehold.it/150x100" alt="Мост между горами.">
+              </a>
+              <p class="collection__title">
+                <b class="collection__author">Анна</b>(5 минут назад)
+              </p>
+              <p class="collection__text">
+                Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
+              </p>
+              <button class="collection__heart" type="button">Нравится</button>
+              <p class="collection__like">Нравится: 215</p>
+            </div>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Фотостудия. На сьемках белого автомобиля.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Левон</b>(5 часов назад)
+            </p>
+            <p class="collection__text">
+              Вчера он на луну летал, сегодня в руки к нам попал.
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 356</p>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Барабанная установка.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Антон</b>(12 часов назад)
+            </p>
+            <p class="collection__text">
+              Соседи будут рады!
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 666</p>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Внутри стеклянного дома.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Борис</b>(20 часов назад)
+            </p>
+            <p class="collection__text">
+              Здесь могла быть ваша цитата о высоком и вечном.
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 215</p>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Ярмарка бахчи.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Сергей</b>(25 часов назад)
+            </p>
+            <p class="collection__text">
+              Самая кубанская в мире!
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 4</p>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Человек сидит на краю пропости, свесив ноги.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Максим</b>(40 часов назад)
+            </p>
+            <p class="collection__text">
+              Где снег-то?
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 150</p>
+          </li>
+          <li class="collection__item">
+            <a class="collection__full-picture" href="#">
+              <img src="http://placehold.it/150x100" alt="Крыло летящего самолета.">
+            </a>
+            <p class="collection__title">
+              <b class="collection__author">Надежда</b>(45 часов назад)
+            </p>
+            <p class="collection__text">
+              Всем GM и взаимные лайки!
+            </p>
+            <button class="collection__heart" type="button">Нравится</button>
+            <p class="collection__like">Нравится: 2560</p>
+          </li>
+        </ul>
+      </section>
+      <form class="form-post">
+        <h2 class="visually-hidden">Отредактировать и отправить фотографию</h2>
+        <p class="form-post__slogan">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <a class="form-post__full-picture" href="#">
+          <img src="http://placehold.it/150x100" alt="Зимняя дорога.">
+        </a>
+        <ul class="tools__list">
+          <li class="tools__item tools__item--active tools__item--crop">
+            <span class="visually-hidden">Вырезать</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+          </li>
+          <li class="tools__item tools__item--fill">
+            <span class="visually-hidden">Заливка</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+          </li>
+          <li class="tools__item tools__item--contrast">
+            <span class="visually-hidden">Контраст</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+          </li>
+          <li class="tools__item tools__item--transparence">
+            <span class="visually-hidden">Прозрачность</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+          </li>
+        </ul>
+        <p class="form-post__button">
+          <button class="form-post__send form-post--active" type="submit">Запостить</button>
+          <button class="form-post__cancel" type="reset">Отмена</button>
+        </p>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="page-footer__list">
+        <li class="page-footer__item">
+          <a href="https://twitter.com">
+            <span class="visually-hidden">Twitter</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="56" viewBox="0 0 47 56"></svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://www.facebook.com/">
+            <span class="visually-hidden">Facebook</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47"></svg>
+          </a>
+        </li>
+        <li class="page-footer__item">
+          <a href="https://www.youtube.com">
+            <span class="visually-hidden">Youtube</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+          </a>
+        </li>
+      </ul>
+      <a class="logo page-footer__logo" href="index.html">
+        <span class="visually-hidden">На Главную</span>
+        <svg class="page-footer__logo-svg" xmlns="http://www.w3.org/2000/svg" width="75" height="22" viewBox="0 0 75 22"></svg>
+      </a>
+      <p class="page-footer__made">Разработано
+        <a class="logo page-footer__logo-academy" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">HTML Academy</span>
+          <svg class="page-footer__academy-svg" xmlns="http://www.w3.org/2000/svg" width="75" height="22" viewBox="0 0 75 22"></svg>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

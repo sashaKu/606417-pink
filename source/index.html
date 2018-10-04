@@ -2,11 +2,210 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Pink</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Профессиональный HTML и CSS</a>», уровень 2.</p>
-
+    <header class="page-header">
+      <a class="logo page-header__logo">
+        <span class="visually-hidden">Pink</span>
+        <svg class="page-header__logo-svg" xmlns="http://www.w3.org/2000/svg" width="75" height="22" viewBox="0 0 75 22"></svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle main-nav__toggle--active" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button">Закрыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">Фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru/">HTML Academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+      <h1 class="visually-hidden">"Pink" - это мобильное приложение для раскрашивания "серых" будней в "розовый цвет"</h1>
+      <section class="downloads">
+        <h2 class="visually-hidden">Скачать</h2>
+        <a class="downloads__button" href="#">Скачать приложение</a>
+        <p class="downloads__accessibility">
+          Доступно для iPhone, Android, Windows Phone, OS X, Windows 8
+        </p>
+        <ul class="downloads__list">
+          <li class="downloads__item">
+            <a href="https://www.apple.com/ru/ios/app-store/">
+              <span class="visually-hidden">Apple Store</span>
+              <svg class="downloads__apple-svg" xmlns="http://www.w3.org/2000/svg" width="47" height="56" viewBox="0 0 47 56"></svg>
+            </a>
+          </li>
+          <li class="downloads__item">
+            <a href="https://play.google.com/store">
+              <span class="visually-hidden">Goole Play Store</span>
+              <svg class="downloads__android-svg" xmlns="http://www.w3.org/2000/svg" width="43" height="47" viewBox="0 0 43 47"></svg>
+            </a>
+          </li>
+          <li class="downloads__item">
+            <a href="https://www.microsoft.com/ru-ru/store/appsvnext/windows">
+              <span class="visually-hidden">Microsoft Store</span>
+              <svg class="downloads__microsoft-svg" xmlns="http://www.w3.org/2000/svg" width="44" height="41" viewBox="0 0 44 41"></svg>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="capabilities">
+        <h2 class="visually-hidden">Возможности приложения</h2>
+        <p class="capabilities__slogan">
+          Устали от серости мегаполиса? Нам есть, что Вам предложить!
+        </p>
+        <ul class="capabilities__list">
+          <li class="capabilities__item">
+            <h3 class="capabilities__title">Поднимает настроение</h3>
+            <p class="capabilities__text">
+              Приложение позволит вам победить осеннюю хандру и депресию буквально в несколько кликов!
+            </p>
+          </li>
+          <li class="capabilities__item">
+            <h3 class="capabilities__title">Меняет мир вокруг</h3>
+            <p class="capabilities__text">
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+            </p>
+          </li>
+          <li class="capabilities__item">
+            <h3 class="capabilities__title">Заводит новых друзей</h3>
+            <p class="capabilities__text">
+              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <div class="reviews__wrapper slider">
+        <h2 class="visually-hidden">Отзывы</h2>
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item reviews__item--active slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quotation">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к вложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quotation">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к вложенной фотографии!"
+              </p>
+            </blockquote>
+            <blockquote class="reviews__item slider__item">
+              <cite class="reviews__author-name">Николай Петров</cite>
+              <p class="reviews__quotation">
+                "Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к вложенной фотографии!""
+              </p>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--active" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+      </div>
+      </section>
+      <section class="prices">
+        <div class="prices__wrapper slider">
+          <h2 class="visually-hidden">Тарифы</h2>
+          <ul class="prices__list slider__list">
+            <li class="prices__item slider__item">
+              <ul class="price__list">
+                <li class="price__item price__header">
+                  <h3 class="price__title">Стандарт</h3>
+                  <p class="price__value">3.99 USD</p>
+                </li>
+                <li class="price__item price__item--yes">
+                  Розовые фильтр
+                </li>
+                <li class="price__item price__item--yes">
+                  Смайлики
+                </li>
+                <li class="price__item price__item--no">
+                  Комментарии
+                </li>
+              </ul>
+            </li>
+            <li class="prices__item prices__item--active slider__item">
+              <span class="visually-hidden">Хит</span>
+              <!-- <svg class="price__description"></svg> -->
+              <ul class="price__list">
+                <li class="price__item price__header">
+                  <h3 class="price__title">Стандарт</h3>
+                  <p class="price__value">3.99 USD</p>
+                </li>
+                <li class="price__item price__item--yes">
+                  Розовые фильтр
+                </li>
+                <li class="price__item price__item--yes">
+                  Смайлики
+                </li>
+                <li class="price__item price__item--no">
+                  Комментарии
+                </li>
+              </ul>
+            </li>
+            <li class="prices__item slider__item">
+              <ul class="price__list">
+                <li class="price__item price__header">
+                  <h3 class="price__title">Стандарт</h3>
+                  <p class="price__value">3.99 USD</p>
+                </li>
+                <li class="price__item price__item--yes">
+                  Розовые фильтр
+                </li>
+                <li class="price__item price__item--yes">
+                  Смайлики
+                </li>
+                <li class="price__item price__item--no">
+                  Комментарии
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="prices__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--active" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+      <footer class="footer-contacts">
+        <h2 class="visually-hidden">Контакты</h2>
+        <b class="footer-contacts__title">Остались вопросы? Свяжитесь с нами!</b>
+        <ul class="footer-contacts__list">
+          <li class="footer-contacts__item">
+            <h3 class="footer-contacts__subtitle">Звоните:</h3>
+            <p class="footer-contacts__text">
+              <a href="tel:+78125556666">тел. +7 (812) 555-66-66</a>
+            </p>
+          </li>
+          <li class="footer-contacts__item">
+            <h3 class="footer-contacts__subtitle">Пишите:</h3>
+            <a class="footer-contacts__text">mail@htmlacademy.ru</a>
+          </li>
+          <li class="footer-contacts__item">
+            <h3 class="footer-contacts__subtitle">Приезжайте в гости:</h3>
+            <p class="footer-contacts__text">
+              ул. Большая Конюшенная, 19/8
+            </p>
+          </li>
+          <li class="footer-contacts__item footer-contacts__map">
+            <h3 class="visually-hidden">Наш адрес на карте:</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533336!2d30.32085871640524!3d59.93871648187612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1538438752461" width="320" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <img class="footer-contacts__map-img" src="http://placehold.it/320x200" width="320" height="200" alt="Санкт-Петербург, ул.Б.Конюшенная, д.19/8, тел. +7(812)555-66-66">
+          </li>
+        </ul>
+      </footer>
+    </main>
   </body>
 </html>
