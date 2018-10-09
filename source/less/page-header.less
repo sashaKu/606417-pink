@@ -1,13 +1,17 @@
 .page-header {
   font-size: 18px;
   line-height: 32px;
-  font-weight: 700;
-  background-color: @grey;
+  font-weight: 400;
   text-transform: uppercase;
+  width: 320px;
   padding-top: 22px;
+  background-color: @grey;
   &__logo {
     display: inline-block;
     padding-left: 20px;
     padding-bottom: 15px;
   }
+}
+@media (min-width: @tablet-width) {
+  width: 640px;
 }

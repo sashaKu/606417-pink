@@ -1,17 +1,30 @@
 @font-face {
-  font-family: 'Open Sans',sans-serif, sans-serif, Arial;
-  src: url('opensans.woff2') format('woff2'),
-  url('opensansbold.woff2') format('woff2'),
-  url('opensanslight.woff2') format('woff2');
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-style: normal;
+  src: url('fonts/opensanslight.woff2') format('woff2');
 }
-@font: 'Open Sans',sans-serif, sans-serif, Arial;
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-style: normal;
+  src: url('fonts/opensans.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-style: normal;
+  src: url('fonts/opensansbold.woff2') format('woff2');
+}
+@tablet-width: 768px;
+@desktop-width: 1200px;
+@mobile-width-only: 767px;
 @import "colors";
 @import "button";
 body {
   margin: 0;
   padding: 0;
-  max-width: 320px;
-  font-family: 'Open Sans', sans-serif, Arial;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 a {
   text-decoration: none;
