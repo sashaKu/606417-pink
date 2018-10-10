@@ -1,6 +1,11 @@
 .collection {
   color: @grey;
-  .collection __item--better {
+  .collection__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .collection__mark {
     font-size: 12px;
     line-height: 24px;
     font-weight: 700;
@@ -8,29 +13,29 @@
     background-color: @pink;
     text-transform: uppercase;
   }
-  .collection __item-text-box {
+  .collection__item-text-box {
     background-color: #f2f2f2;
   }
-  .collection __title {
+  .collection__title {
     font-size: 12px;
     line-height: 24px;
     font-weight: 300;
     text-transform: uppercase;
     color: #949aa1;
   }
-  .collection __author {
+  .collection__author {
     font-size: 14px;
     line-height: 24px;
     font-weight: 700;
     color: @grey;
     text-transform: capitalize;
   }
-  .collection __text {
+  .collection__text {
     font-size: 14px;
     line-height: 24px;
     font-weight: 400;
   }
-  .collection __like {
+  .collection__like {
     font-size: 12px;
     line-height: 24px;
     font-weight: 400;
