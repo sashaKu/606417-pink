@@ -1,16 +1,27 @@
 .main-nav {
-  .main-nav__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .main-nav__item {
-    text-align: center;
-    padding-top: 18px;
-    padding-bottom: 13px;
-  }
-  .main-nav__item a {
-    text-decoration: none;
-    color: #ffffff;
-  }
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  text-transform: uppercase;
+    .main-nav__list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .main-nav__item {
+      text-align: center;
+      padding-top: 18px;
+      padding-bottom: 13px;
+    }
+    .main-nav__item a {
+      text-decoration: none;
+      color: #ffffff;
+    }
+    @media (min-width: @desktop-width) {
+      .main-nav__list {
+        width: 1047px;
+        display: flex;
+        flex-direction: row;
+        }
+    }
 }

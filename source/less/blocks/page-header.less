@@ -1,13 +1,28 @@
 .page-header {
-  font-size: 18px;
-  line-height: 32px;
-  font-weight: 700;
   background-color: @grey;
-  text-transform: uppercase;
-  padding-top: 22px;
-  .page-header__logo {
-    display: inline-block;
-    padding-left: 20px;
-    padding-bottom: 15px;
-  }
+    .page-header__logo {
+      display: inline-block;
+      padding-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 23px;
+      }
+      @media (min-width: @tablet-width) {
+        .page-header__logo {
+          padding-left: 93px;
+          padding-top: 42px;
+          padding-bottom: 42px;
+          }
+      }
+      @media (min-width: @desktop-width) {
+        .page-header {
+          width: 1047px;
+          display: flex;
+          flex-direction: row;
+        }
+        .page-header__logo {
+          padding-left: 40px;
+          padding-top: 42px;
+          padding-bottom: 42px;
+          }
+      }
 }
