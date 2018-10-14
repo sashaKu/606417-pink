@@ -1,29 +1,15 @@
 .page-header {
   background-color: @grey;
-  height: 320px; // временно
 }
 .page-header__logo {
   display: block;
   width: 75px;
-  padding-left: 20px;
+  height: 24px;
   padding-top: 20px;
-  padding-bottom: 23px;
-}
-@media (min-width: @tablet-width) {
-.page-header__logo {
-  padding-left: 93px;
-  padding-top: 42px;
-  padding-bottom: 42px;
-}
-}
-@media (min-width: @desktop-width) {
-.page-header {
-  display: flex;
-  flex-direction: row;
-}
-.page-header__logo {
-  padding-left: 203px;
-  padding-bottom: 42px;
-  padding-right: 170px
-}
+  padding-bottom: 27px;
+  @media (min-width: @tablet-width) {
+    padding-left: 72px;
+    padding-top: 43px;
+    padding-bottom: 43px;
+  }
 }

@@ -10,6 +10,32 @@
   border: 3px solid #ffffff;
   border-radius: 50px;
 }
+.wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+}
 .mock {
   display: none;
+}
+.slider__toggles {
+  height: 12px;
+  width: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slider__toggle {
+  display: block;
+  height: 6px;
+  width: 6px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(@grey 0.3);
 }

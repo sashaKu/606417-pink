@@ -1,57 +1,69 @@
 .downloads {
-  min-height: 730px;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  min-height: 462px;
+  margin-bottom: 245px;
   background-color: @grey;
   color: #ffffff;
+  background-image: url("/img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 50px;
+    min-height: 620px;
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
 }
 .downloads__box {
   min-height: 270px;
   position: relative;
-  top: 50px;
-  min-height: 270px;
+  top: 397px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 405px;
+  background-color: @grey;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    min-height: 300px;
+    padding-left: 20px;
+    top: 243px;
+    align-items: flex-start;
+    background-color: rgba(@grey,0.1);
+  }
 }
 .downloads__button {
+  margin-top: 25px;
   color: #ffffff;
   text-decoration: none;
 }
 .downloads__accessibility {
   order: 1;
   width: 235px;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
+  text-align: center;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 .downloads__list {
   width: 205px;
   margin: 0;
   padding: 0;
+  margin-top: 20px;
   list-style: none;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    align-self: center;
+  }
 }
 .downloads__item {
   align-self: baseline;
-}
-@media (min-width: @tablet-width) {
-.downloads {
-  background-image: url("../img/bg-back-tablet@1x.jpg") 50% 0;
-  background-repeat: no-repeat;
-  background-size: 660px auto;
-  }
-}
-@media (min-width: @desktop-width) {
-.downloads {
-  background-image: url("../img/bg-back-desktop@1x.jpg") 50% 0;
-  background-repeat: no-repeat;
-  background-size: 1200px auto;
-  }
 }
