@@ -1,3 +1,30 @@
+.man-nav {
+  position: relative;
+}
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  cursor: pointer;
+  border: none;
+}
+.main-nav__closed {
+  display: block;
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  top: 20px;
+  left: 275px;
+  background-image: url("/img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: @grey;
+  @media (min-width: @tablet-width) {
+    top: 45px;
+    left: 617px;
+  }
+}
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -9,8 +36,9 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 17px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #000000;
 }
 .main-nav__item a {
   text-decoration: none;
