@@ -11,7 +11,7 @@
   list-style: none;
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 620px;
+    width: 462px;
     flex-direction: row;
   }
 }
@@ -25,16 +25,25 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: @tablet-width) {
+    width: 152;
+  }
 }
 .prices__item-cart {
   padding-bottom: 20px;
   border: 1px solid #e5e5e5;
+  @media (min-width: @tablet-width) {
+    width: 154px;
+    padding-bottom: 8px;
+  }
 }
 .prices__header-cart {
   padding-left: 90px;
   border-bottom: none;
   background-color: @grey;
-
+  @media (min-width: @tablet-width) {
+    padding-left: 46px;
+  }
 }
 .prices__title-cart {
   margin: 0;
@@ -44,6 +53,10 @@
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
+  @media (min-width: @tablet-width) {
+    padding-top: 15px;
+    font-size: 16px;
+  }
 }
 .prices__value-cart {
   margin: 0;
@@ -52,16 +65,25 @@
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+  }
 }
 .prices__check-cart {
   padding-top: 10px;
   padding-left: 24px;
+  padding-right: 24px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
   background-color: #ffffff;
+  @media (min-width: @tablet-width) {
+    padding-left: 16px;
+    padding-right: 30px;
+    text-transform: capitalize;
   }
+}
 .prices__toggles {
   padding-left: 112px;
   @media (min-width: @tablet-width) {
