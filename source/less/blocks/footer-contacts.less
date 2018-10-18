@@ -4,6 +4,9 @@
 .footer-contacts_box {
   width: 250px;
   margin-bottom: 43px;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }
 .footer-contacts__title {
   display: block;
@@ -12,14 +15,37 @@
   line-height: 28px;
   font-weight: 300;
   color: @grey;
+  @media (min-width: @tablet-width) {
+    width: 375px;
+    padding-left: 120px;
+    padding-bottom: 45px;
+    font-size: 40px;
+    line-height: 48px;
+  }
 }
 .footer-contacts__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 }
 .footer-contacts__item {
   padding-bottom: 25px;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    padding-right: 10px;
+    padding-bottom: 47px;
+  }
+}
+.footer-contacts__item:nth-child(3) {
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    padding-left: 195px;
+  }
 }
 .footer-contacts__item a {
   color: @pink;
