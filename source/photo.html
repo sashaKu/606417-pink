@@ -5,9 +5,9 @@
     <title>Pink</title>
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-    <header class="page-header">
-      <a class="logo page-header__logo">
+  <header class="page-header">
+    <div class="page-header__box">
+      <a class="page-header__logo" href="index.html">
         <span class="visually-hidden">Pink</span>
         <svg class="page-header__logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
           <g>
@@ -19,17 +19,17 @@
         </svg>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--active mock" type="button">
+        <button class="main-nav__toggle main-nav__close main-nav__toggle--active" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <button class="visually-hidden main-nav__toggle  mock" type="button">
+        <button class="main-nav__toggle main-nav__open" type="button">
           <span class="visually-hidden">Закрыть меню</span>
         </button>
         <ul class="main-nav__list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="index.html">Главная</a>
           </li>
-          <li class="main-nav__item main-nav__item--active">
+          <li class="main-nav__item">
             <a>Фотографии</a>
           </li>
           <li class="main-nav__item">
@@ -40,7 +40,8 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
     <main class="page-main">
       <div class="page-main__top">
         <h1 class="page-main__title">Фотографии пользователей</h1>
@@ -255,5 +256,6 @@
         </a>
       </p>
     </footer>
+    <script src="js/main-nav.js"></script>
   </body>
 </html>

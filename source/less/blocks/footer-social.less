@@ -1,0 +1,70 @@
+.footer-social {
+  display: none;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    width: 620px;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+.footer-social__list {
+  @media (min-width: @tablet-width) {
+    order: 2;
+    display: flex;
+    width: 190px;
+    margin: 0;
+    padding: 0;
+    padding-right: 85px;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+  }
+}
+.footer-social__item {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    height: 45px;
+    width: 45px;
+    border: 3px solid rgba(@grey, 0.1);
+    flex-direction: row;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.footer-social__item svg {
+  @media (min-width: @tablet-width) {
+  fill: @pink;
+  }
+}
+.footer-social__logo {
+  @media (min-width: @tablet-width) {
+    order: 1;
+    height: auto;
+    width: 150px;
+    padding-right: 65px;
+  }
+}
+.footer-social__made {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    order: 3;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: @grey;
+    align-items: center;
+  }
+}
+footer-social__logo-academy {
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+}
+.footer-social__made-svg {
+  @media (min-width: @tablet-width) {
+  fill: @pink;
+  }
+}

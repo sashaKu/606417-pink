@@ -1,71 +1,69 @@
 .prices {
-  margin-bottom: 47px;
-  padding-top: 85px;
-  padding-bottom: 34px;
+  margin-bottom: 45px;
+  padding-top: 88px;
+  padding-bottom: 24px;
   background-color: #f2f2f2;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 40px;
+  }
 }
 .prices__list {
   margin: 0;
   padding: 0;
-  padding-bottom: 25px;
+  padding-bottom: 30px;
   list-style: none;
   @media (min-width: @tablet-width) {
     display: flex;
-    width: 620px;
     flex-direction: row;
     justify-content: flex-end;
-    flex-wrap: wrap;
   }
 }
 .prices__item {
   text-transform: uppercase;
   @media (min-width: @tablet-width) {
-    width: 155px;
-  }
-}
-.prices__item:first-child {
-  @media (min-width: @tablet-width) {
-    padding-right: 155px;
-    position: relative;
+    width: 155px;;
   }
 }
 .prices__item svg {
   position: absolute;
+  @media (min-width: @tablet-width) {
+    transform: translateY(-7px) translateX(-7px) scale(0.8);
+  }
 }
 .prices__list-cart {
   margin: 0;
   padding: 0;
+  border: 1px solid #f2f2f2;
   list-style: none;
   @media (min-width: @tablet-width) {
-    position: relative;
+    border: none;
   }
 }
 .prices__item-cart {
-  padding-bottom: 22px;
+  display: block;
   border: 1px solid #e5e5e5;
   @media (min-width: @tablet-width) {
-    padding-bottom: 8px;
-  }
-}
-.prices__first-cart {
-  @media (min-width: @tablet-width) {
-    position: relative;
-    left: 155px;
+    border: none;
   }
 }
 .prices__header-cart {
   padding-left: 90px;
-  border-bottom: none;
   background-color: @grey;
   @media (min-width: @tablet-width) {
-    padding-left: 42px;
-    padding-bottom: 4px;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.prices__header-cart:nth-child(1) {
+  @media (min-width: @tablet-width) {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
   }
 }
 .prices__title-cart {
   margin: 0;
   padding: 0;
-  padding-top: 19px;
+  padding-top: 17px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -73,71 +71,53 @@
   @media (min-width: @tablet-width) {
     padding-top: 13px;
     font-size: 16px;
+    line-height: 26px;
   }
 }
 .prices__value-cart {
   margin: 0;
   padding: 0;
+  padding-bottom: 20px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
   color: #ffffff;
   @media (min-width: @tablet-width) {
+    padding-bottom: 10px;
     font-size: 18px;
   }
 }
 .prices__check-cart {
-  padding-top: 10px;
-  padding-left: 24px;
+  padding-left: 22px;
   padding-right: 24px;
+  padding-bottom: 13px;
+  padding-top: 15px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
   background-color: #ffffff;
   @media (min-width: @tablet-width) {
-    padding-left: 16px;
-    padding-right: 30px;
-    text-transform: capitalize;
+    display: block;
+    height: 45px;
+    width: 153px;
+    padding: 0;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    font-size: 0;
+    text-transform: none;
   }
 }
-.prices__item:first-child .prices__check-cart:nth-child(2)::before {
+.prices__check-cart:nth-child(2)::before {
   @media (min-width: @tablet-width) {
     content: "";
-    display: block;
-    height: 48px;
+    height: 45px;
     width: 153px;
-    position: absolute;
-    left: 155px;
-    top: 78px;
-    background-color: white;
     border: 1px solid #e5e5e5;
-  }
-}
-.prices__item:first-child .prices__check-cart:nth-child(3)::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    display: block;
-    height: 48px;
-    width: 153px;
-    position: absolute;
-    left: 155px;
-    top: 128px;
-    background-color: white;
-    border: 1px solid #e5e5e5;
-  }
-}
-.prices__item:first-child .prices__check-cart:nth-child(4)::before {
-  @media (min-width: @tablet-width) {
-    content: "";
-    display: block;
-    height: 48px;
-    width: 153px;
-    position: absolute;
-    left: 155px;
-    top: 178px;
-    background-color: white;
-    border: 1px solid #e5e5e5;
+    background-color: red;
+    position: relative;
+    top: -200px;
+    left: 0;
   }
 }
 .prices__toggles {

@@ -1,11 +1,11 @@
 .downloads {
   min-height: 270px;
-  margin-bottom: 44px;
+  margin-bottom: 43px;
   position: relative;
   background-color: @grey;
   @media (min-width: @tablet-width) {
     min-height: 0px;
-    margin-bottom: 52px;
+    margin-bottom: 53px;
     position: relative;
   }
 }
@@ -20,15 +20,15 @@
     width: 300px;
     padding-left: 20px;
     position: absolute;
-    bottom: 135px;
+    bottom: 145px;
     justify-content: flex-start;
   }
 }
 .downloads__slogan {
   display: none;
   @media (min-width: @tablet-width) {
-    display: inline-block;
-    width: 205px;
+    display: block;
+    width: 200px;
     margin-bottom: 30px;
     font-size: 40px;
     line-height: 48px;
@@ -42,6 +42,18 @@
   margin-bottom: 29px;
   color: #ffffff;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: @pink;
+    outline: 0;
+  }
+  &:active {
+    background-color: #ffffff;
+    border-color: #ffffff;
+    color: rgba(@pink,0.3);
+  }
   @media (min-width: @tablet-width) {
     margin: 0;
     margin-bottom: 42px;
