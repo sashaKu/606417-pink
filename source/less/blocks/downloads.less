@@ -4,9 +4,12 @@
   position: relative;
   background-color: @grey;
   @media (min-width: @tablet-width) {
-    min-height: 0px;
+    min-height: 0;
     margin-bottom: 53px;
     position: relative;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 72px;
   }
 }
 .downloads__box {
@@ -23,6 +26,13 @@
     bottom: 145px;
     justify-content: flex-start;
   }
+  @media (min-width: @desktop-width) {
+    min-height: 520px;
+    width: 300px;
+    padding-left: 130px;
+    position: absolute;
+    bottom: 165px;
+  }
 }
 .downloads__slogan {
   display: none;
@@ -35,6 +45,12 @@
     font-weight: 300;
     color: #ffffff;
     text-align: center;
+  }
+  @media (min-width: @desktop-width) {
+    width: 250px;
+    margin-bottom: 55px;
+    font-size: 50px;
+    line-height: 58px;
   }
 }
 .downloads__button {
@@ -58,6 +74,10 @@
     margin: 0;
     margin-bottom: 42px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-bottom: 65px;
+  }
 }
 .downloads__accessibility {
   order: 1;
@@ -72,6 +92,9 @@
     font-size: 18px;
     line-height: 24px;
   }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+  }
 }
 .downloads__list {
   display: flex;
@@ -85,6 +108,10 @@
   justify-content: space-between;
   @media (min-width: @tablet-width) {
     margin-bottom: 14px;
+  }
+  @media (min-width: @desktop-width) {
+    margin: 0;
+    margin-bottom: 50px;
   }
 }
 .downloads__item {
