@@ -5,12 +5,19 @@
   @media (min-width: @tablet-width) {
     margin-bottom: 0;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 20px;
+  }
 }
 .reviews__list {
   margin: 0;
   padding: 0;
   padding-bottom: 28px;
   list-style: none;
+  @media (min-width: @desktop-width) {
+    width: 700px;
+    margin-left: 230px;
+  }
 }
 .reviews__item {
   margin: 0;
@@ -27,6 +34,10 @@
     top: 130px;
     font-size: 20px;
   }
+  @media (min-width: @desktop-width) {
+    font-size: 24px;
+    line-height: 30px;
+  }
 }
 .reviews__author-info {
   display: none;
@@ -35,6 +46,10 @@
     position: relative;
     top: 130px;
     font-size: 14px;
+    line-height: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
     line-height: 30px;
   }
 }
@@ -54,5 +69,8 @@
   padding-left: 110px;
   @media (min-width: @tablet-width) {
     padding-left: 278px;
+  }
+  @media (min-width: @desktop-width) {
+    display: none;
   }
 }

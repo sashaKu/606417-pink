@@ -6,6 +6,11 @@
     margin-bottom: 98px;
     padding-bottom: 24px;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-bottom: 68px;
+  }
 }
 .capabilities__slogan {
   padding-bottom: 10px;
@@ -20,7 +25,7 @@
     line-height: 48px;
   }
   @media (min-width: @desktop-width) {
-    padding-bottom: 43px;
+    padding-bottom: 80px;
     font-size: 50px;
     line-height: 58px;
   }
@@ -90,8 +95,12 @@
     display: flex;
     width: 940px;
     padding: 0;
+    margin-left: 108px;
+    top: -70px;
     flex-direction: row;
-  }
+    justify-content: space-around;
+    text-align: center;
+ }
 }
 .capabilities__item {
   padding-bottom: 17px;
@@ -101,19 +110,24 @@
     padding-bottom: 19px;
   }
   @media (min-width: @desktop-width) {
-    padding-top: 320px;
+    width: 250px;
+    padding: 0;
+    padding-top: 353px;
+    text-align: center;
   }
 }
 .capabilities__item:nth-child(1) {
   @media (min-width: @desktop-width) {
     background-image: url("/img/iphone-screen-1-desktop@1x.png");
     background-repeat: no-repeat;
+    background-position:top;
   }
 }
 .capabilities__item:nth-child(2) {
   @media (min-width: @desktop-width) {
     background-image: url("/img/iphone-screen-2-desktop@1x.png");
     background-repeat: no-repeat;
+    background-position: center 0;
   }
 }
 .capabilities__item:nth-child(3) {
@@ -121,6 +135,7 @@
   @media (min-width: @desktop-width) {
     background-image: url("/img/iphone-screen-3-desktop@1x.png");
     background-repeat: no-repeat;
+    background-position: center 0;
   }
 }
 .capabilities__title {
@@ -131,8 +146,11 @@
   font-weight: 700;
   color: #000000;
   @media (min-width: @desktop-width) {
+    width: 230px;
+    padding-bottom: 5px;
     font-size: 30px;
     line-height: 30px;
+    text-align: center;
   }
 }
 .capabilities__text {
@@ -140,7 +158,9 @@
   line-height: 24px;
   font-weight: 400;
   @media (min-width: @desktop-width) {
+    width: 240px;
     font-size: 18px;
     line-height: 30px;
+    text-align: center;
   }
 }
