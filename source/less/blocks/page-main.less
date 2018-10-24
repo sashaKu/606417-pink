@@ -6,20 +6,35 @@
   width: 180px;
   margin: 0;
   position: absolute;
-  bottom: 98px;
+  bottom: 133px;
   left: 70px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
   text-align: center;
   color: #ffffff;
+  @media (min-width: @tablet-width) {
+    width: 360px;
+    bottom: 230px;
+    left: 150px;
+    font-size: 50px;
+    line-height: 58px;
+  }
 }
 .page-main__text {
-  width: 100px;
+  width: 245px;
+  margin-bottom: 22px;
   padding-left: 40px;
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    width: 440px;
+    margin-bottom: 55px;
+    padding-left: 110px;
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

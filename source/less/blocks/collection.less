@@ -1,45 +1,91 @@
 .collection {
   color: @grey;
-  .collection__list {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin-bottom: 25px;
+}
+.collection__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .collection__mark {
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 700;
-    color: #ffffff;
-    background-color: @pink;
-    text-transform: uppercase;
+}
+.collection__item {
+  margin-bottom: 5px;
+  text-align: left;
+  @media (min-width: @tablet-width) {
+    width: 300px;
   }
-  .collection__item-text-box {
-    background-color: #f2f2f2;
+}
+.collection__item:first-child {
+  position: relative;
+  @media (min-width: @tablet-width) {
+    width: 660px;
+    .collection__full-picture img {
+      display: none;
+    }
+    .collection__full-picture {
+      display: block;
+      width: 660px;
+      height: 510px;
+      background-image: url("/img/panorama-tablet@1x.jpg");
+    }
   }
-  .collection__title {
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #949aa1;
-  }
-  .collection__author {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 700;
-    color: @grey;
-    text-transform: capitalize;
-  }
-  .collection__text {
-    font-size: 14px;
-    line-height: 24px;
-    font-weight: 400;
-  }
-  .collection__like {
-    font-size: 12px;
-    line-height: 24px;
-    font-weight: 400;
-    color: @pink;
-    text-transform: uppercase;
-  }
+}
+.collection__mark {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  top: 30px;
+  left: 160px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: @pink;
+  text-transform: uppercase;
+}
+.collection__full-picture {
+  background-color: #f2f2f2;
+}
+.collection__item-text-box {
+  padding-top: 10px;
+  background-color: #f2f2f2;
+}
+.collection__title {
+  margin: 0;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #949aa1;
+}
+.collection__author {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @grey;
+  text-transform: capitalize;
+}
+.collection__text {
+  width: 245px;
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.collection__like {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: @pink;
+  text-transform: uppercase;
 }
