@@ -12,6 +12,10 @@
   @media (min-width: @tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
   }
 }
 .collection__item {
@@ -25,6 +29,10 @@
   position: relative;
   @media (min-width: @tablet-width) {
     width: 660px;
+    .collection__item-text-box {
+      margin-left: 20px;
+      width: 620px;
+    }
     .collection__full-picture img {
       display: none;
     }
@@ -33,6 +41,30 @@
       width: 660px;
       height: 510px;
       background-image: url("/img/panorama-tablet@1x.jpg");
+      background-position: center;
+    }
+    .collection__text {
+      width: 520px;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    width: 1200px;
+    .collection__item-text-box {
+      margin-left: 130px;
+      width: 940px;
+    }
+    .collection__full-picture img {
+      display: none;
+    }
+    .collection__full-picture {
+      display: block;
+      width: 1200px;
+      height: 510px;
+      background-image: url("/img/panorama-tablet@1x.jpg");
+      background-position: center;
+    }
+    .collection__text {
+      width: 940px;
     }
   }
 }
@@ -57,6 +89,9 @@
 .collection__item-text-box {
   padding-top: 10px;
   background-color: #f2f2f2;
+  @media (min-width: @tablet-width) {
+    min-height: 155px;
+  }
 }
 .collection__title {
   margin: 0;

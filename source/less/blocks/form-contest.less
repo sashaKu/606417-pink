@@ -1,32 +1,41 @@
 .form-contest {
-  fieldset {
-    border: none;
-  }
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
-  .form-contest__list-progress,
-  .form-contest__list-name,
-  .form-contest__list-contacts,
-  .form-contest__list-device {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .form-contest__name,
-  .form-contest__title {
-    font-size: 14px;
-    line-height: 30px;
-    font-weight: 400;
-    color: @pink;
-    text-transform: uppercase;
-  }
-  .form-contest__necessarily-marker {
-    color: @pink;
-  }
-  .form-contest__progress-box,
-  .form-contest__device-box {
-    background-color: #f2f2f2;
-  }
+}
+.form-contest  fieldset {
+  border: none;
+}
+.form-contest__list-progress,
+.form-contest__list-name,
+.form-contest__list-contacts,
+.form-contest__list-device {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.form-contest__name,
+.form-contest__title {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @pink;
+  text-transform: uppercase;
+}
+.form-contest__necessarily-marker {
+  color: @pink;
+}
+.form-contest__progress-box,
+.form-contest__device-box {
+  background-color: #f2f2f2;
+}
+.form-contest__checkbox-input input[type="text"],
+.form-contest__checkbox-input input[type="email"],
+.form-contest__checkbox-input textarea {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: @grey;
 }

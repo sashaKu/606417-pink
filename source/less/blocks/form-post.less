@@ -7,16 +7,32 @@
   font-weight: 400;
   text-align: center;
   color: @grey;
+  @media (min-width: @tablet-width) {
+    width: 430px;
+    font-size: 18px;
+  }
 }
 .form-post__box {
   padding-top: 20px;
   padding-bottom: 40px;
   background-color: #f2f2f2;
   text-align: center;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  }
+  @media (min-width: @tablet-width) {
+    width: 940px;
+  }
 }
 .form-post__full-picture {
   display: block;
   margin-bottom: 35px;
+  @media (min-width: @tablet-width) {
+    width: 300px;
+  }
 }
 .form-post__send {
   background-color: inherit;
@@ -25,7 +41,7 @@
 }
 .form-post__cancel {
   background-color: inherit;
-  color: rgba(@grey,0.1);;
+  color: rgba(@grey,0.1);
   border-color: rgba(@grey,0.1);
 }
  .form-post__list {
@@ -36,9 +52,27 @@
    margin-bottom: 60px;
    padding-left: 50px;
    list-style: none;
+   flex-direction: row;
    justify-content: space-between;
    align-items: center;
+   @media (min-width: @tablet-width) {
+     width: 300px;
+     flex-direction: column;
+      align-self: flex-start;
+   }
+   @media (min-width: @desktop-width) {
+     width: 410px;
+   }
  }
 .form-post__item svg {
     fill: #b5b9be;
+}
+.form-post__button {
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 410px;
+  }
 }

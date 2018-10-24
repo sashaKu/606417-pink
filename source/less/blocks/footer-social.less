@@ -11,6 +11,11 @@
   .footer-social {
     display: flex;
     flex-direction: column;
+    @media (min-width: @tablet-width) {
+      width: 620px;
+      flex-direction: row;
+      align-items: baseline;
+    }
   }
   .footer-social__list {
     order: 2;

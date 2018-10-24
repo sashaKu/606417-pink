@@ -39,13 +39,17 @@
     background-image: url("/img/iphone-hand-desktop@1x.png");
   }
 }
-.page-header--photo {
+.page-header--photo,
+.page-header--form {
   min-height: 495px;
   margin-bottom: 47px;
   background-position: center;
   @media (min-width: @tablet-width) {
     min-height: 695px;
     margin-bottom: 90px;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 395px;
   }
 }
 .page-header__menu--closed {
