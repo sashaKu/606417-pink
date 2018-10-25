@@ -14,7 +14,7 @@
 }
 .form-post__box {
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   background-color: #f2f2f2;
   text-align: center;
   @media (min-width: @tablet-width) {
@@ -45,15 +45,16 @@
   border-color: rgba(@grey,0.1);
 }
  .form-post__list {
-   width: 200px;
+   width: 240px;
    display: flex;
    margin: 0;
    padding: 0;
    margin-bottom: 60px;
-   padding-left: 50px;
+   padding-left: 35px;
    list-style: none;
    flex-direction: row;
    justify-content: space-between;
+   flex-wrap: wrap;
    align-items: center;
    @media (min-width: @tablet-width) {
      width: 300px;
@@ -65,7 +66,13 @@
    }
  }
 .form-post__item svg {
-    fill: #b5b9be;
+  fill: #b5b9be;
+}
+.form-post__item--active svg {
+  fill: @pink;
+}
+.form-post__item--scale {
+  padding-top: 30px;
 }
 .form-post__button {
   @media (min-width: @tablet-width) {
@@ -75,4 +82,7 @@
     display: flex;
     width: 410px;
   }
+}
+.form-post__send {
+  margin-bottom: 12px;
 }

@@ -7,12 +7,11 @@
     display: flex;
     flex-direction: column;
   }
-}
-.form-contest fieldset {
-  width: 280px;
-  border: none;
-  @media (min-width: @tablet-width) {
-    width: 620px;
+  @media (min-width: @desktop-width) {
+    width: 940px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .form-contest__list-progress,
@@ -23,9 +22,54 @@
   padding: 0;
   list-style: none;
 }
-.form-contest__list-progress {
+.form-contest__name {
   @media (min-width: @tablet-width) {
-    order
+    order: 1;
+  }
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
+}
+.form-contest__progress-box {
+  @media (min-width: @tablet-width) {
+    order: 4;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+.form-contest__contacts {
+  @media (min-width: @tablet-width) {
+    order: 3;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+.form-contest__device-box {
+  @media (min-width: @tablet-width) {
+    order: 2;
+  }
+  @media (min-width: @desktop-width) {
+    width: 450px;
+  }
+}
+.form-contest__notes {
+  @media (min-width: @tablet-width) {
+    order: 5;
+  }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
+}
+.form-contest__necessarily {
+  @media (min-width: @tablet-width) {
+    order: 6;
+  }
+}
+.form-contest__button {
+  @media (min-width: @tablet-width) {
+    order: 7;
   }
 }
 .form-contest__list-device {

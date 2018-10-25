@@ -27,11 +27,15 @@
 }
 .collection__item:first-child {
   position: relative;
+  .collection__item-text-box {
+    width: 280px;
+    margin-left: 20px;
+  }
   @media (min-width: @tablet-width) {
     width: 660px;
     .collection__item-text-box {
-      margin-left: 20px;
       width: 620px;
+      margin-left: 20px;
     }
     .collection__full-picture img {
       display: none;
