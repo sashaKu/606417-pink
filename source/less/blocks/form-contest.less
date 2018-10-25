@@ -3,9 +3,17 @@
   line-height: 30px;
   font-weight: 400;
   color: @grey;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
 }
-.form-contest  fieldset {
+.form-contest fieldset {
+  width: 280px;
   border: none;
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }
 .form-contest__list-progress,
 .form-contest__list-name,
@@ -14,6 +22,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.form-contest__list-progress {
+  @media (min-width: @tablet-width) {
+    order
+  }
+}
+.form-contest__list-device {
+  @media (min-width: @tablet-width) {
+    width: 620px;
+  }
 }
 .form-contest__name,
 .form-contest__title {
@@ -30,10 +48,11 @@
 .form-contest__device-box {
   background-color: #f2f2f2;
 }
-.form-contest__checkbox-input input[type="text"],
-.form-contest__checkbox-input input[type="email"],
-.form-contest__checkbox-input textarea {
-  padding: 10px;
+.form-contest__text-input[type="text"],
+.form-contest__text-input[type="email"],
+.form-contest__text-input[type="tel"],
+textarea {
+  padding: 15px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;

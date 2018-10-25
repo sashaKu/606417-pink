@@ -2,6 +2,10 @@
   position: relative;
   bottom: 188px;
   left: 44px;
+  @media (min-width: @tablet-width) {
+    bottom: 347px;
+    left: 90px;
+  }
 }
 .page-main__title {
   display: block;
@@ -14,9 +18,7 @@
   text-align: center;
   color: #ffffff;
   @media (min-width: @tablet-width) {
-    width: 360px;
-    bottom: 230px;
-    left: 150px;
+    width: 480px;
     font-size: 50px;
     line-height: 58px;
   }
@@ -26,6 +28,11 @@
   }
 }
 .page-main__text {
+  &--bottom {
+    @media (max-width: @tablet-width) {
+      display: none;
+    }
+  }
   width: 280px;
   margin-bottom: 22px;
   padding-left: 20px;
@@ -35,9 +42,9 @@
   color: @grey;
   text-align: center;
   @media (min-width: @tablet-width) {
-    width: 440px;
-    margin-bottom: 55px;
-    padding-left: 110px;
+    width: 490px;
+    margin: 0;
+    padding-left: 86px;
     font-size: 18px;
     line-height: 30px;
   }
