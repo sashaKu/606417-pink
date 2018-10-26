@@ -19,12 +19,11 @@
   text-align: center;
   @media (min-width: @tablet-width) {
     display: flex;
+    width: 660px;
+    position: relative;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
-  }
-  @media (min-width: @tablet-width) {
-    width: 940px;
   }
 }
 .form-post__full-picture {
@@ -77,6 +76,9 @@
 .form-post__button {
   @media (min-width: @tablet-width) {
     width: 260px;
+    position: absolute;
+    top: 240px;
+    left: 350px;
   }
   @media (min-width: @desktop-width) {
     display: flex;
