@@ -14,15 +14,27 @@
     flex-wrap: wrap;
   }
 }
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
 .form-contest__list-progress,
 .form-contest__list-name,
 .form-contest__list-contacts,
 .form-contest__list-device {
+  display: flex;
   margin: 0;
   padding: 0;
+  flex-direction: column;
   list-style: none;
 }
+.form-contest__list-name {
+  min-height: 325px;
+  justify-content: space-between;
+}
 .form-contest__name {
+  margin-bottom: 50px;
   @media (min-width: @tablet-width) {
     order: 1;
   }
@@ -77,6 +89,10 @@
     width: 620px;
   }
 }
+.form-contest__item-name {
+  width: 280px;
+  align-self: center;
+}
 .form-contest__name,
 .form-contest__title {
   font-size: 14px;
@@ -96,9 +112,14 @@
 .form-contest__text-input[type="email"],
 .form-contest__text-input[type="tel"],
 textarea {
-  padding: 15px;
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 21px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   color: @grey;
+}
+.form-contest__text-input {
+  margin-top: 5px;
 }

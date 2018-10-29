@@ -25,6 +25,9 @@
     flex-wrap: wrap;
     align-content: flex-start;
   }
+  @media (min-width: @desktop-width) {
+    width: 940px;
+  }
 }
 .form-post__full-picture {
   display: block;
@@ -58,7 +61,8 @@
    @media (min-width: @tablet-width) {
      width: 300px;
      flex-direction: column;
-      align-self: flex-start;
+     align-self: flex-start;
+     align-items: flex-start;
    }
    @media (min-width: @desktop-width) {
      width: 410px;

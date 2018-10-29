@@ -12,7 +12,7 @@
     &::before{
       content: "";
       height: 280px;
-      width: 240px;
+      width: 250px;
       position: absolute;
       left: 20px;
       top: -42px;
@@ -22,6 +22,9 @@
       @media (min-width: @desktop-width) {
         height: 300px;
         width: 350px;
+        top: -70px;
+        left: 155px;
+        transform: scale(1.15);
       }
     }
     &::after {
@@ -29,13 +32,15 @@
       height: 280px;
       width: 240px;
       position: absolute;
-      left: 83px;
-      top: 40px;
+      left: 84px;
+      top: 42px;
       font-size: 96px;
       line-height: 140px;
       font-weight: 700;
       color: @pink;
       @media (min-width: @desktop-width) {
+        top: 20px;
+        left: 210px;
         font-size: 120px;
         line-height: 158px;
       }
