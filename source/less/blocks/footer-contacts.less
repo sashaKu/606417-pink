@@ -103,3 +103,23 @@
   font-weight: 300;
   color: @pink;
 }
+.footer-contacts__map {
+  position: relative;
+  /* растягиваем по ширине окна */
+  width: 100vw;
+  /* центрируем */
+  left: 50%;
+  transform: translate(-50%);
+  @media (min-width: @tablet-width) {
+    .footer-contacts__map-img {
+      display: none;
+    }
+    min-height: 375px;
+    background-image: url("/img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+  }
+  @media (min-width: @desktop-width) {
+    min-height: 505px;
+    background-image: url("/img/bg-map-desktop@1x.jpg");
+  }
+}
